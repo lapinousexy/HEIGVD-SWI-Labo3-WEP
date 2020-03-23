@@ -118,6 +118,14 @@ Un fork du repo original . Puis, un Pull Request contenant :
 -	Script de chiffrement WEP **abondamment commenté/documenté**
   - Fichier pcap généré par votre script contenant la trame chiffrée
   - Capture d’écran de votre trame importée et déchiffré par Wireshark
+
+    Capture d’écran de la trame fourni pour le labo
+    ![](img/SWI_Labo03_Image01.png)
+    ![](img/SWI_Labo03_Image02.png)
+
+    Capture d’écran de notre trame déchiffré
+    ![](img/SWI_Labo03_Image03.png)
+
 -	Script de fragmentation **abondamment commenté/documenté**
   - Fichier pcap généré par votre script contenant les fragments
   - Capture d’écran de vos trames importées et déchiffrés par Wireshark 
