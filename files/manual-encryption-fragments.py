@@ -1,6 +1,6 @@
 # Source: 
 # - Daniel pour la longeur du message
-#
+# - Abraham Rubinstein pour la base du script
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
