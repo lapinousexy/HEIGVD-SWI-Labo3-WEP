@@ -1,6 +1,7 @@
 # Source: 
 # - Daniel pour la longeur du message
-#
+# - Abraham Rubinstein pour la base du script
+# - https://github.com/VictorTruan/SU19-WLANSec-Lab2-WEP
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
