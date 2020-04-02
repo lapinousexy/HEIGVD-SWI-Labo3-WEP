@@ -1,6 +1,6 @@
 # Source: 
 # - Daniel pour la longeur du message
-# - Abraham Rubinstein pour la base du script
+#
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -15,10 +15,9 @@ from zlib import crc32
 def createPacket(data):
     key= b'\xaa\xaa\xaa\xaa\xaa'
     arp = rdpcap('arp.cap')[0]
-    packet = arp
 
     # RC4 seed est composé de IV+clé
-    iv = packet.iv
+    iv = arp.iv
     seed = iv+key
     
     icv = crc32(bytes(data, 'utf8')) & 0xffffffff
@@ -28,10 +27,10 @@ def createPacket(data):
     ciphertext = cipher.crypt(bytes(data, 'utf8') + struct.pack("<L", icv))
 
     # Remplacement des champs dans le packet
-    packet.wepdata = ciphertext[:-4]
+    arp.wepdata = ciphertext[:-4]
     icvtmp = ciphertext[-4:]
-    packet.icv = struct.unpack("!L", icvtmp)[0]
-    return packet
+    arp.icv = struct.unpack("!L", icvtmp)[0]
+    return arp
 
 
 
