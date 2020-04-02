@@ -130,6 +130,12 @@ Un fork du repo original . Puis, un Pull Request contenant :
   - Fichier pcap généré par votre script contenant les fragments
   - Capture d’écran de vos trames importées et déchiffrés par Wireshark 
 
+    Capture d'un des fragments de la trame:
+    ![](img/SWI_Labo03_Image04.png)
+
+    Capture du rassemblement des fragments
+    ![](img/SWI_Labo03_Image05.png)
+
 -	Envoyer le hash du commit et votre username GitHub par email au professeur et à l'assistant
 
 
